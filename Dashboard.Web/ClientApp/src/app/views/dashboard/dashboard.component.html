@@ -1,0 +1,564 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-2">
+      <div class="card text-white bg-primary">
+        <div class="card-body pb-0">
+          <button type="button" class="btn btn-transparent p-0 float-right">
+            <i class="icon-user"></i>
+          </button>
+          <div class="text-value">1.823</div>
+          <div>Total de Convidados</div>
+        </div>
+        <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
+          <canvas baseChart class="chart"
+                  [datasets]="lineChart2Data"
+                  [labels]="lineChart2Labels"
+                  [options]="lineChart2Options"
+                  [colors]="lineChart2Colours"
+                  [legend]="lineChart2Legend"
+                  [chartType]="lineChart2Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-2">
+      <div class="card text-white bg-primary">
+        <div class="card-body pb-0">
+          <div class="btn-group float-right" dropdown>
+            <button type="button" class="btn btn-transparent p-0 float-right">
+              <i class="icon-user"></i>
+            </button>
+
+          </div>
+          <div class="text-value">721</div>
+          <div>Convidados confirmados</div>
+        </div>
+        <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
+          <canvas baseChart class="chart"
+                  [datasets]="lineChart1Data"
+                  [labels]="lineChart1Labels"
+                  [options]="lineChart1Options"
+                  [colors]="lineChart1Colours"
+                  [legend]="lineChart1Legend"
+                  [chartType]="lineChart1Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-2">
+      <div class="card text-white bg-primary">
+        <div class="card-body pb-0">
+          <div class="btn-group float-right" dropdown>
+            <button type="button" class="btn btn-transparent p-0 float-right">
+              <i class="icon-user"></i>
+            </button>
+          </div>
+          <div class="text-value">1.724</div>
+          <div>Convite por email visualizado</div>
+        </div>
+        <div class="chart-wrapper mt-3" style="height:70px;">
+          <canvas baseChart class="chart"
+                  [datasets]="lineChart3Data"
+                  [labels]="lineChart3Labels"
+                  [options]="lineChart3Options"
+                  [colors]="lineChart3Colours"
+                  [legend]="lineChart3Legend"
+                  [chartType]="lineChart3Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-2">
+      <div class="card text-white bg-primary">
+        <div class="card-body pb-0">
+          <div class="btn-group float-right" dropdown>
+            <button type="button" class="btn btn-transparent p-0 float-right">
+              <i class="icon-user"></i>
+            </button>
+
+          </div>
+          <div class="text-value">605</div>
+          <div>Presentes no evento</div>
+        </div>
+        <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
+          <canvas baseChart class="chart"
+                  [datasets]="barChart1Data"
+                  [labels]="barChart1Labels"
+                  [options]="barChart1Options"
+                  [colors]="barChart1Colours"
+                  [legend]="barChart1Legend"
+                  [chartType]="barChart1Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <!--/.col-->
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-2">
+      <div class="card text-white bg-primary">
+        <div class="card-body pb-0">
+          <div class="btn-group float-right" dropdown>
+            <button type="button" class="btn btn-transparent p-0 float-right">
+              <i class="icon-user"></i>
+            </button>
+
+          </div>
+          <div class="text-value">1003</div>
+          <div>Convites recusados</div>
+        </div>
+        <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
+          <canvas baseChart class="chart"
+                  [datasets]="barChart1Data"
+                  [labels]="barChart1Labels"
+                  [options]="barChart1Options"
+                  [colors]="barChart1Colours"
+                  [legend]="barChart1Legend"
+                  [chartType]="barChart1Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <!--/.col-->
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-2">
+      <div class="card text-white bg-primary">
+        <div class="card-body pb-0">
+          <div class="btn-group float-right" dropdown>
+            <button type="button" class="btn btn-transparent p-0 float-right">
+              <i class="icon-user"></i>
+            </button>
+
+          </div>
+          <div class="text-value">5.000</div>
+          <div>Total de acesso ao site</div>
+        </div>
+        <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
+          <canvas baseChart class="chart"
+                  [datasets]="barChart1Data"
+                  [labels]="barChart1Labels"
+                  [options]="barChart1Options"
+                  [colors]="barChart1Colours"
+                  [legend]="barChart1Legend"
+                  [chartType]="barChart1Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+         Dados sobre os convidados
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="callout callout-info">
+                    <small class="text-muted">Convidados</small>
+                    <br>
+                    <strong class="h4">1.823</strong>
+                  </div>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <hr class="mt-0">
+
+              <div class="progress-group">
+                <div class="progress-group-header">
+                  <i class="icon-user progress-group-icon"></i>
+                  <div>Masculino</div>
+                  <div class="ml-auto font-weight-bold">50%</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header">
+                  <i class="icon-user-female progress-group-icon"></i>
+                  <div>Feminino</div>
+                  <div class="ml-auto font-weight-bold">45%</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group mb-5">
+                <div class="progress-group-header">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Diversidade</div>
+                  <div class="ml-auto font-weight-bold">5%</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Idades de convidados -->
+
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>18 anos ou menos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxx</div>
+                  <div class="text-muted small">(10%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Entre 19 e 25 anos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxxx</div>
+                  <div class="text-muted small">(40%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Entre 25 e 30 anos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxxx</div>
+                  <div class="text-muted small">(35%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Entre 31 e 40 anos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxxx</div>
+                  <div class="text-muted small">(10%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Acima de 41 anos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxxx</div>
+                  <div class="text-muted small">(5%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fim idades convidados -->
+
+            </div><!--/.col-->
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="callout callout-info">
+                    <small class="text-muted">Presentes no evento</small>
+                    <br>
+                    <strong class="h4">605</strong>
+                  </div>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <hr class="mt-0">
+              <div class="progress-group">
+                <div class="progress-group-header">
+                  <i class="icon-user progress-group-icon"></i>
+                  <div>Masculino</div>
+                  <div class="ml-auto font-weight-bold">50%</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header">
+                  <i class="icon-user-female progress-group-icon"></i>
+                  <div>Feminino</div>
+                  <div class="ml-auto font-weight-bold">45%</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group mb-5">
+                <div class="progress-group-header">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Diversidade</div>
+                  <div class="ml-auto font-weight-bold">5%</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Idades de convidados -->
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>18 anos ou menos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxx</div>
+                  <div class="text-muted small">(10%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Entre 19 e 25 anos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxxx</div>
+                  <div class="text-muted small">(40%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Entre 25 e 30 anos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxxx</div>
+                  <div class="text-muted small">(35%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Entre 31 e 40 anos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxxx</div>
+                  <div class="text-muted small">(10%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <div class="progress-group-header align-items-end">
+                  <i class="icon-people progress-group-icon"></i>
+                  <div>Acima de 41 anos</div>
+                  <div class="ml-auto font-weight-bold mr-2">xxxx</div>
+                  <div class="text-muted small">(5%)</div>
+                </div>
+                <div class="progress-group-bars">
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-pink" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fim Idades de convidados -->
+            </div><!--/.col-->
+          </div><!--/.row-->
+
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div>
+
+  <!-- Gráficos -->
+  <div class="animated fadeIn">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            Gráfico de convidados
+            <div class="card-header-actions">
+              <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Day" id="option1">Dia</label>
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Month" id="option2">Semana</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="chart-wrapper">
+              <canvas baseChart class="chartConvidados"
+                      [datasets]="barChartDataConvidados"
+                      [labels]="barChartLabelsConvidados"
+                      [options]="barChartOptionsConvidados"
+                      [legend]="barChartLegendConvidados"
+                      [chartType]="barChartTypeConvidados"
+                      (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)">
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            Acesso ao site
+            <div class="card-header-actions">
+              <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Day" id="option1">Dia</label>
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Month" id="option2">Semana</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="chart-wrapper">
+              <canvas baseChart class="chart"
+                      [datasets]="lineChartData"
+                      [labels]="lineChartLabels"
+                      [options]="lineChartOptions"
+                      [colors]="lineChartColours"
+                      [legend]="lineChartLegend"
+                      [chartType]="lineChartType"
+                      (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)">
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/.fim gráficos-->
+
+
+
+
+
+  <div class="animated fadeIn">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa fa-align-justify"></i> Tabela de convidados
+          </div>
+
+
+          <div class="card-body">
+            <button class="btn btn-primary mb-3">Mais detalhes</button>
+            <div class="card-header-actions">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="digite sua pesquisa">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
+            </div>
+          </div>
+
+
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>Empresa</th>
+                  <th>Data da Inscrição</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Luiz Gustavo</td>
+                  <td>luiz@email.com</td>
+                  <td>Eventch</td>
+                  <td>10/11/2020</td>
+                  <td>
+                    <span class="badge badge-success">Inscrito</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Luiz Gustavo</td>
+                  <td>luiz@email.com</td>
+                  <td>Eventch</td>
+                  <td>10/11/2020</td>
+                  <td>
+                    <span class="badge badge-secondary">Pendende</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Luiz Gustavo</td>
+                  <td>luiz@email.com</td>
+                  <td>Eventch</td>
+                  <td>10/11/2020</td>
+                  <td>
+                    <span class="badge badge-danger">Recusado</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Luiz Gustavo</td>
+                  <td>luiz@email.com</td>
+                  <td>Eventch</td>
+                  <td>10/11/2020</td>
+                  <td>
+                    <span class="badge badge-success">Inscrito</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Luiz Gustavo</td>
+                  <td>luiz@email.com</td>
+                  <td>Eventch</td>
+                  <td>10/11/2020</td>
+                  <td>
+                    <span class="badge badge-secondary">Pendente</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Luiz Gustavo</td>
+                  <td>luiz@email.com</td>
+                  <td>Eventch</td>
+                  <td>10/11/2020</td>
+                  <td>
+                    <span class="badge badge-danger">Recusado</span>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
